@@ -1,0 +1,126 @@
+/* ===========================================
+   STAFF-FLOW SIGNUP PAGE
+=========================================== */
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  font-family: "Inter", sans-serif;
+}
+
+/* ===========================
+   SIGNUP CARD
+=========================== */
+
+.card {
+  width: 460px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card h2 {
+  font-size: 28px;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+button {
+  padding: 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* ===========================
+   BOTTOM TEXT
+=========================== */
+
+.bottomText {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.bottomText a {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.bottomText a:hover {
+  text-decoration: underline;
+}
+.input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #ffffff;
+  color: #1f2937;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}

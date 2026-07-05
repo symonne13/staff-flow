@@ -1,0 +1,234 @@
+/* ===================================================
+   STAFF-FLOW ENTERPRISE HRMS
+   Global Theme
+=================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+
+  /* ===== Brand Colors ===== */
+
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-light: #60a5fa;
+
+  --secondary: #0f172a;
+
+  --background: #f8fafc;
+
+  --card: #ffffff;
+
+  --border: #e2e8f0;
+
+  --text: #1e293b;
+
+  --text-light: #64748b;
+
+  --success: #22c55e;
+
+  --danger: #ef4444;
+
+  --warning: #f59e0b;
+
+  /* ===== Radius ===== */
+
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 24px;
+
+  /* ===== Shadows ===== */
+
+  --shadow-sm: 0 5px 15px rgba(0,0,0,.05);
+
+  --shadow:
+      0 12px 35px rgba(0,0,0,.08);
+
+  --shadow-lg:
+      0 20px 45px rgba(0,0,0,.12);
+
+  /* ===== Animation ===== */
+
+  --transition: .3s ease;
+
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+
+  font-family:"Inter",sans-serif;
+
+  background:var(--background);
+
+  color:var(--text);
+
+}
+
+a{
+
+  text-decoration:none;
+
+  color:inherit;
+
+}
+
+button{
+
+  font-family:"Inter",sans-serif;
+
+  cursor:pointer;
+
+  border:none;
+
+  transition:var(--transition);
+
+}
+
+input,
+textarea,
+select{
+
+  font-family:"Inter",sans-serif;
+
+  outline:none;
+
+}
+
+img{
+
+  max-width:100%;
+
+  display:block;
+
+}
+
+.container{
+
+  width:90%;
+
+  max-width:1400px;
+
+  margin:auto;
+
+}
+
+/* Buttons */
+
+.primaryButton{
+
+  background:var(--primary);
+
+  color:white;
+
+  padding:14px 30px;
+
+  border-radius:12px;
+
+  font-weight:600;
+
+  box-shadow:var(--shadow-sm);
+
+}
+
+.primaryButton:hover{
+
+  background:var(--primary-dark);
+
+  transform:translateY(-2px);
+
+}
+
+.secondaryButton{
+
+  background:white;
+
+  color:var(--primary);
+
+  border:2px solid var(--primary);
+
+  padding:14px 30px;
+
+  border-radius:12px;
+
+  font-weight:600;
+
+}
+
+.secondaryButton:hover{
+
+  background:var(--primary);
+
+  color:white;
+
+}
+
+/* Cards */
+
+.card{
+
+  background:var(--card);
+
+  border-radius:var(--radius);
+
+  box-shadow:var(--shadow);
+
+  padding:25px;
+
+}
+
+/* Status */
+
+.success{
+
+  color:white;
+
+  background:var(--success);
+
+}
+
+.warning{
+
+  color:white;
+
+  background:var(--warning);
+
+}
+
+.danger{
+
+  color:white;
+
+  background:var(--danger);
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+  width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+  background:var(--primary);
+
+  border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+  background:#e5e7eb;
+
+}

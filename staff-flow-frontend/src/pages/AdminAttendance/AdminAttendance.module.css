@@ -1,0 +1,52 @@
+.page {
+  padding: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tableWrapper {
+  margin-top: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.in {
+  color: green;
+  font-weight: bold;
+}
+
+.out {
+  color: red;
+  font-weight: bold;
+}
+
+.leave {
+  color: orange;
+  font-weight: bold;
+}

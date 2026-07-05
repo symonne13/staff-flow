@@ -1,0 +1,48 @@
+.page{
+    padding:30px;
+}
+
+.page h1{
+    margin-bottom:30px;
+    color:#1e293b;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card h2{
+    margin-bottom:12px;
+}
+
+.card p{
+    color:gray;
+    margin-bottom:20px;
+}
+
+.card button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#1d4ed8;
+}

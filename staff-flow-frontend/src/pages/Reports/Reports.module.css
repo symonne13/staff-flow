@@ -1,0 +1,171 @@
+.page {
+  padding: 30px;
+  background: #f4f7fb;
+  min-height: 100vh;
+}
+
+.page h1 {
+  margin-bottom: 25px;
+  color: #1e293b;
+}
+
+/* ================= CARDS ================= */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 34px;
+  color: #2563eb;
+}
+
+/* ================= FILTERS ================= */
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.filters input,
+.filters select {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  min-width: 220px;
+  outline: none;
+}
+
+.filters button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.filters button:hover {
+  background: #1d4ed8;
+}
+
+/* ================= TABLE ================= */
+
+.tableWrapper {
+  background: white;
+  border-radius: 15px;
+  overflow-x: auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background: #2563eb;
+  color: white;
+}
+
+.table th,
+.table td {
+  padding: 15px;
+  text-align: left;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+.table tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* ================= STATUS ================= */
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.present {
+  background: #16a34a;
+}
+
+.absent {
+  background: #dc2626;
+}
+
+.leave {
+  background: #f59e0b;
+}
+
+/* ================= EXPORT ================= */
+
+.exportButtons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.exportButtons button {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background: #0f172a;
+  transition: .3s;
+}
+
+.exportButtons button:hover {
+  background: #1e293b;
+}
+.loading{
+padding:20px;
+text-align:center;
+font-weight:bold;
+color:#2563eb;
+}
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.filters{
+flex-direction:column;
+}
+
+.filters input,
+.filters select,
+.filters button{
+width:100%;
+}
+
+}

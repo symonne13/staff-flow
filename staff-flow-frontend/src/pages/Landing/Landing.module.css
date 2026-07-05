@@ -1,0 +1,428 @@
+/* ===========================================
+   STAFF-FLOW ENTERPRISE HRMS
+   Landing Page - Part 1
+=========================================== */
+
+.page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  padding: 0 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logoIcon {
+  width: 55px;
+  height: 55px;
+  border-radius: 16px;
+  background: linear-gradient(135deg,#2563eb,#1d4ed8);
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h2 {
+  font-size: 24px;
+  color: #0f172a;
+  margin-bottom: 3px;
+}
+
+.logo span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.loginBtn {
+  color: #2563eb;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.loginBtn:hover {
+  color: #1d4ed8;
+}
+
+.signupBtn {
+  background: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.signupBtn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  min-height: calc(100vh - 80px);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge {
+  width: fit-content;
+  padding: 10px 18px;
+  border-radius: 30px;
+  background: rgba(37,99,235,.08);
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.heroLeft h1 {
+  font-size: 60px;
+  line-height: 1.1;
+  color: #0f172a;
+  margin-bottom: 30px;
+}
+
+.heroLeft p {
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 20px;
+}
+
+.primaryBtn {
+  background: #2563eb;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.primaryBtn:hover {
+  background: #1d4ed8;
+  transform: translateY(-3px);
+}
+
+.secondaryBtn {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  padding: 15px 35px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.secondaryBtn:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* ===========================
+   DASHBOARD MOCKUP
+=========================== */
+
+.heroRight {
+  display: flex;
+  justify-content: center;
+}
+
+.dashboardMockup {
+  width: 650px;
+  max-width: 100%;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,.12);
+}
+
+.mockHeader {
+  height: 60px;
+  background: #0f172a;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  gap: 10px;
+}
+
+.mockCircle {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: white;
+  opacity: .7;
+}
+
+.mockContent {
+  display: flex;
+  height: 500px;
+}
+
+.mockSidebar {
+  width: 140px;
+  background: #1e293b;
+}
+
+.mockMain {
+  flex: 1;
+  background: #f8fafc;
+  padding: 25px;
+}
+
+.mockCard {
+  width: 100%;
+  height: 90px;
+  border-radius: 18px;
+  background: white;
+  margin-bottom: 20px;
+}
+
+.mockGrid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.smallCard {
+  height: 110px;
+  background: white;
+  border-radius: 18px;
+}
+
+.largeCard {
+  width: 100%;
+  height: 170px;
+  background: white;
+  border-radius: 18px;
+}
+/* ===========================================
+   FEATURES SECTION
+=========================================== */
+
+.features {
+  padding: 120px 70px;
+  background: #ffffff;
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+.sectionHeader h2 {
+  font-size: 42px;
+  color: #0f172a;
+  margin-bottom: 15px;
+}
+
+.sectionHeader p {
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* FEATURE GRID */
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.featureCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.featureCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 14px;
+  background: rgba(37,99,235,0.1);
+  color: #2563eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.featureCard h3 {
+  font-size: 18px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.featureCard p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ===========================================
+   CTA SECTION
+=========================================== */
+
+.cta {
+  padding: 120px 70px;
+  background: #f8fafc;
+  display: flex;
+  justify-content: center;
+}
+
+.ctaCard {
+  width: 100%;
+  max-width: 1000px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  padding: 70px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 30px 60px rgba(37,99,235,0.25);
+}
+
+.ctaCard h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.ctaCard p {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  color: #2563eb;
+  padding: 15px 35px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.ctaButton:hover {
+  transform: translateY(-3px);
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+=========================================== */
+
+@media (max-width: 1100px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .heroButtons {
+    justify-content: center;
+  }
+
+  .featureGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heroLeft h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 25px;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .heroLeft h1 {
+    font-size: 36px;
+  }
+
+  .featureGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaCard {
+    padding: 40px 25px;
+  }
+
+  .ctaCard h2 {
+    font-size: 28px;
+  }
+}
+
+/* ===========================================
+   ANIMATIONS
+=========================================== */
+
+.featureCard,
+.primaryBtn,
+.secondaryBtn,
+.signupBtn {
+  transition: all 0.3s ease;
+}
