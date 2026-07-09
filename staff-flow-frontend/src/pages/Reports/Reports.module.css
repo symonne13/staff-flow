@@ -37,7 +37,7 @@
 
 .card h2 {
   font-size: 34px;
-  color: #2563eb;
+  color: #0c348b;
 }
 
 /* ================= FILTERS ================= */
@@ -60,7 +60,7 @@
 
 .filters button {
   border: none;
-  background: #2563eb;
+  background: #05318f;
   color: white;
   padding: 12px 20px;
   border-radius: 10px;
@@ -69,7 +69,7 @@
 }
 
 .filters button:hover {
-  background: #1d4ed8;
+  background: #062885;
 }
 
 /* ================= TABLE ================= */
@@ -87,7 +87,7 @@
 }
 
 .table thead {
-  background: #2563eb;
+  background: #0c2f7c;
   color: white;
 }
 
@@ -152,7 +152,7 @@
 padding:20px;
 text-align:center;
 font-weight:bold;
-color:#2563eb;
+color:#0747cf;
 }
 /* ================= RESPONSIVE ================= */
 

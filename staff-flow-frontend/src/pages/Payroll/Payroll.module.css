@@ -58,7 +58,7 @@
 
 .filters input:focus,
 .filters select:focus {
-  border-color: #2563eb;
+  border-color: #0439aa;
 }
 
 .form {
@@ -86,7 +86,7 @@
 
 .form input:focus,
 .form select:focus {
-  border-color: #2563eb;
+  border-color: #0537a1;
   outline: none;
 }
 
@@ -94,13 +94,13 @@
   margin: 20px 0;
   padding: 15px;
   background: #eff6ff;
-  border-left: 5px solid #2563eb;
+  border-left: 5px solid #0a3eaf;
   border-radius: 10px;
   font-size: 18px;
 }
 
 .save {
-  background: #2563eb;
+  background: #0b44c0;
   color: white;
   border: none;
   padding: 12px 25px;
@@ -110,7 +110,7 @@
 }
 
 .save:hover {
-  background: #1d4ed8;
+  background: #0c3cc2;
 }
 
 .exportButtons {
@@ -146,7 +146,7 @@
 }
 
 .table thead {
-  background: #2563eb;
+  background: #0439aa;
   color: white;
 }
 
@@ -194,12 +194,12 @@
 }
 
 .pdf {
-  background: #2563eb;
+  background: #073baa;
   color: white;
 }
 
 .pdf:hover {
-  background: #1d4ed8;
+  background: #0d39b3;
 }
 
 .loading {

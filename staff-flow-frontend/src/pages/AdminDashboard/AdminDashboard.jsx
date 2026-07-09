@@ -98,20 +98,14 @@ export default function AdminDashboard() {
           <h2>{stats.totalEmployees}</h2>
         </div>
 
-        <div className={styles.card}>
-          <h3>Present Today</h3>
-          <h2>{stats.presentToday}</h2>
-        </div>
+       
 
         <div className={styles.card}>
           <h3>On Leave</h3>
           <h2>{stats.onLeave}</h2>
         </div>
 
-        <div className={styles.card}>
-          <h3>Pending Leaves</h3>
-          <h2>{stats.pendingLeaves}</h2>
-        </div>
+       
       </div>
 
       {/* CHART */}

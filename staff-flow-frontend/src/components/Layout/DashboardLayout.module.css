@@ -25,3 +25,17 @@
   flex: 1;
   padding: 25px;
 }
+/* =========================
+   Responsive Layout
+========================= */
+
+@media (max-width: 768px) {
+  .adminMain,
+  .userMain {
+    margin-left: 0;
+  }
+
+  .content {
+    padding: 15px;
+  }
+}

@@ -34,7 +34,7 @@
 }
 
 .card h2 {
-  color: #2563eb;
+  color: #0c3ca3;
   font-size: 30px;
 }
 
@@ -59,11 +59,11 @@
 
 .form input:focus,
 .form textarea:focus {
-  border-color: #2563eb;
+  border-color: #0d47c5;
 }
 
 .form button {
-  background: #2563eb;
+  background: #073086;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -73,7 +73,7 @@
 }
 
 .form button:hover {
-  background: #1d4ed8;
+  background: #022992;
 }
 
 .search {
@@ -87,7 +87,7 @@
 }
 
 .search:focus {
-  border-color: #2563eb;
+  border-color: #052770;
 }
 
 .grid {
@@ -120,7 +120,7 @@
 }
 
 .departmentCard h4 {
-  color: #2563eb;
+  color: #0839a3;
   margin-bottom: 20px;
 }
 

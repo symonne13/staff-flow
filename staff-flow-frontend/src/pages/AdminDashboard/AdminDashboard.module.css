@@ -15,10 +15,12 @@
 
 .card{
     background:white;
-    padding:25px;
+    padding:20px;
     border-radius:18px;
     box-shadow:0 5px 20px rgba(0,0,0,.08);
     transition:.3s;
+    height:160px;
+    width:250px
 }
 
 .card:hover{
@@ -32,7 +34,7 @@
 
 .card h2{
     font-size:40px;
-    color:#2563eb;
+    color:#0e3996;
 }
 .chartCard{
     margin-top:35px;
@@ -52,7 +54,7 @@
     padding:20px;
     border:none;
     border-radius:15px;
-    background:#2563eb;
+    background:#09379b;
     color:white;
     font-size:16px;
     cursor:pointer;
@@ -61,5 +63,108 @@
 
 .actions button:hover{
     transform:translateY(-5px);
-    background:#1d4ed8;
+    background:#032c9c;
+}
+/* ===========================================
+   RESPONSIVE DESIGN
+=========================================== */
+
+/* Tablets */
+@media (max-width: 992px){
+
+    .dashboard{
+        padding:20px;
+    }
+
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+        gap:18px;
+    }
+
+    .actions{
+        grid-template-columns:repeat(2,1fr);
+        gap:18px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .dashboard{
+        padding:15px;
+    }
+
+    .dashboard h1{
+        font-size:28px;
+        text-align:center;
+        margin-bottom:20px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+    .card h2{
+        font-size:32px;
+    }
+
+    .chartCard{
+        padding:20px;
+        margin-top:25px;
+    }
+
+    .actions{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .actions button{
+        width:100%;
+        padding:16px;
+        font-size:15px;
+    }
+
+}
+
+/* Small Phones */
+@media (max-width:480px){
+
+    .dashboard{
+        padding:12px;
+    }
+
+    .dashboard h1{
+        font-size:24px;
+    }
+
+    .card{
+        padding:18px;
+        border-radius:14px;
+    }
+
+    .card h3{
+        font-size:15px;
+    }
+
+    .card h2{
+        font-size:28px;
+    }
+
+    .chartCard{
+        padding:16px;
+        border-radius:14px;
+    }
+
+    .actions button{
+        padding:14px;
+        font-size:14px;
+        border-radius:12px;
+    }
+
 }

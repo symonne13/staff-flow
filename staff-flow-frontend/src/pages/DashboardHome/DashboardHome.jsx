@@ -85,7 +85,10 @@ return (
 
       <div className={styles.card}
         onClick={() => navigate("/dashboard/attendance")}>
-        <h3>🟢 Attendance Status</h3>
+        <h3>Attendance Status</h3>
+          🟢 Check in
+
+          🔴 Check out
 
      
       </div>
@@ -97,45 +100,13 @@ return (
       </div>
 
       <div className={styles.card}onClick={() => navigate("/dashboard/notifications")}>
-        <h3>🔔 Notifications</h3>
+        <h3>🔔My Notifications</h3>
         
       </div>
 
     </div>
 
-    {/* QUICK ACTIONS */}
-    <div
-  className={styles.quickCard}
-  onClick={() => navigate("/dashboard/attendance")}
->
-  <h3>🕒 Attendance</h3>
-  <p>Check in or check out.</p>
-</div>
-
-<div
-  className={styles.quickCard}
-  onClick={() => navigate("/dashboard/leave")}
->
-  <h3>🌴 Leave</h3>
-  <p>Apply for leave quickly.</p>
-</div>
-
-<div
-  className={styles.quickCard}
-  onClick={() => navigate("/dashboard/notifications")}
->
-  <h3>🔔 Notifications</h3>
-  <p>View recent announcements.</p>
-</div>
-
-<div
-  className={styles.quickCard}
-  onClick={() => navigate("/dashboard/settings")}
->
-  <h3>⚙ Settings</h3>
-  <p>Update your profile.</p>
-</div>
-
+   
     {/* RECENT ACTIVITY */}
     <div className={styles.section}>
 

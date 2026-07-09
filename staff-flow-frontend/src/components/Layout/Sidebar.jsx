@@ -149,15 +149,7 @@ const user = {
           <FaBell />
           Notifications
         </NavLink>
-<NavLink
-  to="/dashboard/inbox"
-  className={({ isActive }) =>
-    isActive ? styles.active : ""
-  }
->
-  <FaInbox />
-  Inbox
-</NavLink>
+
         <NavLink
           to="/dashboard/settings"
           className={({ isActive }) =>

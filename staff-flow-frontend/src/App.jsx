@@ -6,7 +6,7 @@ import Signup from "./pages/Signup/Signup";
 
 import UserLayout from "./components/Layout/UserLayout";
 import AdminLayout from "./components/Layout/AdminLayout";
-import Inbox from "./pages/Inbox/Inbox";
+
 // USER PAGES
 import DashboardHome from "./pages/DashboardHome/DashboardHome";
 import Attendance from "./pages/Attendance/Attendance";
@@ -62,7 +62,7 @@ function App() {
   <Route path="attendance" element={<Attendance />} />
   <Route path="leave" element={<Leave />} />
   <Route path="notifications" element={<Notifications />} />
-  <Route path="inbox" element={<Inbox />} />
+
   <Route path="settings" element={<Settings />} />
 </Route>
 
@@ -82,7 +82,7 @@ function App() {
   <Route path="departments" element={<Departments />} />
   <Route path="reports" element={<Reports />} />
   <Route path="payroll" element={<Payroll />} />
-  <Route path="inbox" element={<Inbox />} />
+ 
   <Route path="leave" element={<AdminLeave />} />
   <Route path="attendance" element={<AdminAttendance />} />
 </Route>

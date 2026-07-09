@@ -81,7 +81,7 @@ h2{
     object-fit:cover;
 }
 .upload{
-    background:#2563eb;
+    background:#0c3a9e;
     color:white;
     border:none;
     padding:10px 18px;
@@ -128,7 +128,7 @@ h2{
 
 .form input:focus,
 .form select:focus{
-    border-color:#2563eb;
+    border-color:#123c97;
     box-shadow:0 0 0 3px rgba(37,99,235,.15);
 }
 
@@ -137,7 +137,7 @@ button{
     padding:13px 22px;
     border:none;
     border-radius:10px;
-    background:#2563eb;
+    background:#063cb1;
     color:white;
     cursor:pointer;
     font-size:15px;
@@ -145,7 +145,7 @@ button{
 }
 
 button:hover{
-    background:#1d4ed8;
+    background:#0e37a8;
 }
 
 .switchRow{

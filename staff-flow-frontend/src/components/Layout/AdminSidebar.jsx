@@ -79,15 +79,7 @@ export default function AdminSidebar() {
         <NavLink to="/admin/notifications">
           <FaBell /> Notifications
         </NavLink>
-<NavLink
-  to="/admin/inbox"
-  className={({ isActive }) =>
-    isActive ? styles.active : ""
-  }
->
-  <FaInbox />
-  Inbox
-</NavLink>
+
         <NavLink to="/admin/settings">
           <FaCog /> Settings
         </NavLink>

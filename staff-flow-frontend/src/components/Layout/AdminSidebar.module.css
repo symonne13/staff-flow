@@ -14,7 +14,7 @@
 .logo {
   font-size: 32px;
   font-weight: bold;
-  color: #3b82f6;
+  color: #0952c7;
   text-align: center;
   padding: 30px 0;
 }
@@ -28,7 +28,7 @@
   width: 95px;
   height: 95px;
   border-radius: 50%;
-  border: 4px solid #2563eb;
+  border: 4px solid #082f83;
 }
 
 .profile h3 {
@@ -64,10 +64,10 @@
 }
 
 .menu a:hover {
-  background: #2563eb;
+  background: #0c3eaa;
 }
 
 .menu :global(a.active) {
-  background: #2563eb;
+  background: #043397;
   border-left: 5px solid white;
 }

@@ -51,7 +51,7 @@
 
 .profile span {
   display: block;
-  color: #38bdf8;
+  color: #38a1ce;
   font-weight: 600;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .active {
-  background: #2563eb;
+  background: #0b3da8;
 }
 
 .logout {
@@ -117,7 +117,7 @@
 .uploadBtn{
     display:block;
     margin-top:15px;
-    background:#2563eb;
+    background:#0749d8;
     color:white;
     padding:10px;
     border-radius:10px;
@@ -133,4 +133,30 @@
     padding:10px;
     border-radius:10px;
     cursor:pointer;
+}
+/* ===========================
+   Tablet Responsive
+=========================== */
+
+@media (max-width: 992px) {
+  .sidebar {
+    width: 220px;
+    padding: 20px 15px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .avatar,
+  .avatarIcon {
+    width: 90px;
+    height: 90px;
+    font-size: 90px;
+  }
+
+  .menu a {
+    padding: 12px;
+    font-size: 14px;
+  }
 }

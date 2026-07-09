@@ -49,13 +49,13 @@
   border: none;
   cursor: pointer;
   background: #eff6ff;
-  color: #2563eb;
-  font-size: 20px;
+  color: #0a3185;
+  font-size: 18px;
   transition: .3s;
 }
 
 .iconBtn:hover {
-  background: #2563eb;
+  background: #0838a0;
   color: white;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .clock {
-  color: #2563eb;
+  color: #0738a1;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 18px;
 }

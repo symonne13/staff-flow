@@ -5,230 +5,251 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
-:root {
+:root{
 
-  /* ===== Brand Colors ===== */
+/* ===== Brand ===== */
 
-  --primary: #2563eb;
-  --primary-dark: #1d4ed8;
-  --primary-light: #60a5fa;
+--primary:#3b82f6;
+--primary-hover:#2563eb;
+--primary-light:#dbeafe;
 
-  --secondary: #0f172a;
+/* ===== Neutral ===== */
 
-  --background: #f8fafc;
+--secondary:#0f172a;
 
-  --card: #ffffff;
+--background:#f4f7fb;
 
-  --border: #e2e8f0;
+--surface:#ffffff;
 
-  --text: #1e293b;
+--surface-alt:#f8fafc;
 
-  --text-light: #64748b;
+--border:#e5e7eb;
 
-  --success: #22c55e;
+/* ===== Text ===== */
 
-  --danger: #ef4444;
+--text:#1e293b;
 
-  --warning: #f59e0b;
+--text-light:#64748b;
 
-  /* ===== Radius ===== */
+--text-muted:#94a3b8;
 
-  --radius-sm: 10px;
-  --radius: 16px;
-  --radius-lg: 24px;
+/* ===== Status ===== */
 
-  /* ===== Shadows ===== */
+--success:#22c55e;
 
-  --shadow-sm: 0 5px 15px rgba(0,0,0,.05);
+--warning:#f59e0b;
 
-  --shadow:
-      0 12px 35px rgba(0,0,0,.08);
+--danger:#ef4444;
 
-  --shadow-lg:
-      0 20px 45px rgba(0,0,0,.12);
+/* ===== Radius ===== */
 
-  /* ===== Animation ===== */
+--radius-sm:10px;
 
-  --transition: .3s ease;
+--radius:14px;
 
-}
+--radius-lg:18px;
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+/* ===== Shadows ===== */
 
-html{
-  scroll-behavior:smooth;
-}
+--shadow-sm:
+0 2px 8px rgba(15,23,42,.04);
 
-body{
+--shadow-md:
+0 8px 20px rgba(15,23,42,.06);
 
-  font-family:"Inter",sans-serif;
+--shadow-lg:
+0 15px 35px rgba(15,23,42,.08);
 
-  background:var(--background);
+/* ===== Animation ===== */
 
-  color:var(--text);
+--transition:.25s ease;
 
-}
 
-a{
+  /* =========================
+     Layout
+  ========================= */
 
-  text-decoration:none;
+  --navbar-height: 70px;
+  --sidebar-width: 250px;
 
-  color:inherit;
+  --container-width: 1400px;
+
+  --section-padding: 80px;
+  --card-padding: 20px;
 
 }
 
-button{
+/* ===========================================
+   RESET
+=========================================== */
 
-  font-family:"Inter",sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  cursor:pointer;
+html {
+  scroll-behavior: smooth;
+}
 
-  border:none;
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
 
-  transition:var(--transition);
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
+button {
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
 }
 
 input,
 textarea,
-select{
+select {
+  font-family: "Inter", sans-serif;
+  outline: none;
+}
 
-  font-family:"Inter",sans-serif;
+img {
+  display: block;
+  max-width: 100%;
+}
 
-  outline:none;
+/* ===========================================
+   CONTAINER
+=========================================== */
+
+.container {
+  width: 90%;
+  max-width: var(--container-width);
+  margin: auto;
+}
+
+/* ===========================================
+   BUTTONS
+=========================================== */
+
+.primaryButton {
+  background: var(--primary);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.primaryButton:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.secondaryButton {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.secondaryButton:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* ===========================================
+   CARDS
+=========================================== */
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: var(--card-padding);
+  transition: var(--transition);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+/* ===========================================
+   STATUS COLORS
+=========================================== */
+
+.success {
+  color: #fff;
+  background: var(--success);
+}
+
+.warning {
+  color: #fff;
+  background: var(--warning);
+}
+
+.danger {
+  color: #fff;
+  background: var(--danger);
+}
+
+/* ===========================================
+   SCROLLBAR
+=========================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e7eb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media (max-width: 1024px) {
+
+  .container {
+    width: 94%;
+  }
 
 }
 
-img{
+@media (max-width: 768px) {
 
-  max-width:100%;
-
-  display:block;
-
-}
-
-.container{
-
-  width:90%;
-
-  max-width:1400px;
-
-  margin:auto;
+  :root {
+    --section-padding: 60px;
+    --card-padding: 16px;
+  }
 
 }
 
-/* Buttons */
+@media (max-width: 480px) {
 
-.primaryButton{
-
-  background:var(--primary);
-
-  color:white;
-
-  padding:14px 30px;
-
-  border-radius:12px;
-
-  font-weight:600;
-
-  box-shadow:var(--shadow-sm);
-
-}
-
-.primaryButton:hover{
-
-  background:var(--primary-dark);
-
-  transform:translateY(-2px);
-
-}
-
-.secondaryButton{
-
-  background:white;
-
-  color:var(--primary);
-
-  border:2px solid var(--primary);
-
-  padding:14px 30px;
-
-  border-radius:12px;
-
-  font-weight:600;
-
-}
-
-.secondaryButton:hover{
-
-  background:var(--primary);
-
-  color:white;
-
-}
-
-/* Cards */
-
-.card{
-
-  background:var(--card);
-
-  border-radius:var(--radius);
-
-  box-shadow:var(--shadow);
-
-  padding:25px;
-
-}
-
-/* Status */
-
-.success{
-
-  color:white;
-
-  background:var(--success);
-
-}
-
-.warning{
-
-  color:white;
-
-  background:var(--warning);
-
-}
-
-.danger{
-
-  color:white;
-
-  background:var(--danger);
-
-}
-
-/* Scrollbar */
-
-::-webkit-scrollbar{
-
-  width:8px;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-  background:var(--primary);
-
-  border-radius:20px;
-
-}
-
-::-webkit-scrollbar-track{
-
-  background:#e5e7eb;
+  :root {
+    --section-padding: 40px;
+    --card-padding: 14px;
+  }
 
 }

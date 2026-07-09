@@ -60,7 +60,7 @@ input {
 }
 
 input:focus {
-  border-color: #2563eb;
+  border-color: #1845a5;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
@@ -70,7 +70,7 @@ input:focus {
 
 button {
   padding: 14px;
-  background: #2563eb;
+  background: #0e3ea5;
   color: white;
   border: none;
   border-radius: 12px;
@@ -81,7 +81,7 @@ button {
 }
 
 button:hover {
-  background: #1d4ed8;
+  background: #0e39af;
   transform: translateY(-2px);
 }
 
@@ -101,7 +101,7 @@ button:disabled {
 }
 
 .bottomText a {
-  color: #2563eb;
+  color: #1440a0;
   font-weight: 600;
 }
 
@@ -121,6 +121,6 @@ button:disabled {
 }
 
 .input:focus {
-  border-color: #2563eb;
+  border-color: #1b4db8;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }

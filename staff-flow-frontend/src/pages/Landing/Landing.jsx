@@ -63,7 +63,7 @@ export default function Landing() {
 
       {/* Hero */}
       <section className={styles.hero}>
-        <motion.div
+        <motion.div 
           className={styles.heroLeft}
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
@@ -95,37 +95,7 @@ export default function Landing() {
           </div>
         </motion.div>
 
-        <motion.div
-          className={styles.heroRight}
-          initial={{ opacity: 0, x: 60 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <div className={styles.dashboardMockup}>
-            <div className={styles.mockHeader}>
-              <div className={styles.mockCircle}></div>
-              <div className={styles.mockCircle}></div>
-              <div className={styles.mockCircle}></div>
-            </div>
-
-            <div className={styles.mockContent}>
-              <div className={styles.mockSidebar}></div>
-
-              <div className={styles.mockMain}>
-                <div className={styles.mockCard}></div>
-
-                <div className={styles.mockGrid}>
-                  <div className={styles.smallCard}></div>
-                  <div className={styles.smallCard}></div>
-                  <div className={styles.smallCard}></div>
-                  <div className={styles.smallCard}></div>
-                </div>
-
-                <div className={styles.largeCard}></div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
+       
       </section>
 
       {/* Features */}
