@@ -1,73 +1,242 @@
-# Staff Flow - HR Management System
+# 🚀 Staff Flow - Human Resource Management System
 
-Staff Flow is a modern Human Resource Management System built to simplify employee management, attendance tracking, leave management, notifications, and reporting.
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-Express-green?logo=node.js)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange?logo=mysql)
+![License](https://img.shields.io/badge/License-MIT-blue)
+![Status](https://img.shields.io/badge/Status-In%20Development-success)
 
-## Features
+Staff Flow is a modern Human Resource Management System (HRMS) designed to streamline employee management within organizations. The system provides an intuitive interface for employees and administrators to manage attendance, leave requests, employee records, notifications, and workforce analytics.
 
-- Employee Authentication
-- Role-based Access (Admin & Employee)
-- Attendance Management
-- Leave Management
+---
+
+## ✨ Features
+
+### 👤 Employee Portal
+
+- Secure Login & Authentication
+- Dashboard Overview
+- Daily Check In
+- Daily Check Out
+- Leave Application
+- Leave Balance Tracking
+- Attendance History
+- Personal Profile Management
 - Notifications
-- Employee Profiles
-- Dashboard Analytics
-- Admin Management Panel
-- Automatic Leave Balance Calculation
-- Check In / Check Out
-- Return to Work
-- On Leave Status
+- Return to Work Request
 
-## Technologies Used
+---
 
-### Frontend
+### 🛡️ Administrator Portal
+
+- Admin Dashboard
+- Employee Management
+- Attendance Monitoring
+- Leave Approval & Rejection
+- Department Management
+- Reports & Analytics
+- Notifications Management
+- System Settings
+
+---
+
+## 📸 Screenshots
+
+> Screenshots coming soon...
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
 - React
 - Vite
+- React Router
 - Axios
 - CSS Modules
+- Framer Motion
+- React Icons
 - Chart.js
 
-### Backend
+---
+
+## Backend
+
 - Node.js
 - Express.js
 - MySQL
 - JWT Authentication
 - Multer
+- bcrypt.js
+- dotenv
 
-## Project Structure
+---
+
+# 📁 Project Structure
 
 ```
-staff-flow
+staff-flow/
 │
-├── staff-flow-backend
-└── staff-flow-frontend
+├── staff-flow-backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── routes/
+│   ├── uploads/
+│   └── server.js
+│
+├── staff-flow-frontend/
+│   ├── src/
+│   ├── public/
+│   └── vite.config.js
+│
+└── README.md
 ```
 
-## Installation
+---
 
-### Backend
+# ⚙ Installation
+
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/symonne13/staff-flow.git
+```
+
+```
+cd staff-flow
+```
+
+---
+
+## 2️⃣ Backend Setup
 
 ```bash
 cd staff-flow-backend
+```
+
+Install dependencies
+
+```bash
 npm install
+```
+
+Create a `.env` file
+
+```env
+PORT=5000
+
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_password
+DB_NAME=staff_flow
+
+JWT_SECRET=your_secret_key
+```
+
+Start backend
+
+```bash
 npm start
 ```
 
-### Frontend
+---
+
+## 3️⃣ Frontend Setup
 
 ```bash
-cd staff-flow-frontend
+cd ../staff-flow-frontend
+```
+
+Install dependencies
+
+```bash
 npm install
+```
+
+Run development server
+
+```bash
 npm run dev
 ```
 
-## Future Improvements
+---
 
-- Email Notifications
-- Payroll Module
-- Performance Evaluation
-- Employee Documents
-- Mobile Application
+# 📊 Modules
 
-## Developer
+✅ Authentication
 
-Developed by **Ruth Simon**
+✅ Employee Dashboard
+
+✅ Admin Dashboard
+
+✅ Attendance Management
+
+✅ Leave Management
+
+✅ Employee Management
+
+✅ Department Management
+
+✅ Notifications
+
+✅ Reports & Analytics
+
+✅ User Profiles
+
+---
+
+# 🎯 Future Improvements
+
+- 📧 Email Notifications
+- 💰 Payroll Management
+- 📄 Employee Documents
+- 📈 Performance Evaluation
+- 📅 Shift Scheduling
+- 🌙 Dark Mode
+- 📱 Mobile Application
+- ☁ Cloud Deployment
+- 📊 Advanced Analytics
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create your feature branch
+
+```bash
+git checkout -b feature/NewFeature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push
+
+```bash
+git push origin feature/NewFeature
+```
+
+5. Open a Pull Request
+
+---
+
+# 👩‍💻 Developer
+
+**Ruth Simon**
+
+Computer Science Student
+
+Passionate about Full Stack Development, UI/UX Design and Software Engineering.
+
+GitHub:
+https://github.com/symonne13
+
+---
